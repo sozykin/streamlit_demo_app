@@ -1,1 +1,1 @@
-web: streamlit run image_classification.py
+web: sh setup.sh && streamlit run app.py
