@@ -38,7 +38,7 @@ def print_predictions(preds):
 
 model = load_model()
 
-st.title('Классификация изображений')
+st.title('Классификация изображений v2.0')
 img = load_image()
 result = st.button('Распознать изображение')
 if result:
