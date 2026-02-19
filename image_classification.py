@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.efficientnet import preprocess_input, decode_predictions
 
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource
 def load_model():
     return EfficientNetB0(weights='imagenet')
 
@@ -39,7 +39,7 @@ def print_predictions(preds):
 model = load_model()
 
 
-st.title('Новая улучшенная классификации изображений в облаке Streamlit')
+st.title('Классификации изображений')
 img = load_image()
 result = st.button('Распознать изображение')
 if result:
