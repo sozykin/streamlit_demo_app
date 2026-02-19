@@ -1,2 +1,2 @@
 streamlit
-tensorflow
+tensorflow-cpu
